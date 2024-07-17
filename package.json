@@ -5,6 +5,10 @@
       "email": "fikrizhanking@gmail.com",
       "name": "Fikri R."
    },
+   "scripts": {
+      "test": "npx hardhat test",
+      "build": "npx hardhat compile"
+   },
    "license": "GPL-3.0-only",
    "devDependencies": {
       "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
@@ -22,5 +26,8 @@
       "hardhat-gas-reporter": "^1.0.8",
       "solidity-coverage": "^0.8.0",
       "typechain": "^8.3.0"
+   },
+   "dependencies": {
+      "@openzeppelin/contracts": "^5.0.2"
    }
 }
