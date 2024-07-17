@@ -14,7 +14,7 @@ Before you begin, ensure you have met the following requirements:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/tol-contract.git
+   git clone https://github.com/toldapp/tol-contract.git
    ```
 2. Navigate to the project directory:
    ```sh
@@ -66,7 +66,7 @@ Please ensure your code follows the project's coding standards and includes test
 
 ## License
 
-This project is licensed under the GPL 3.0 License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the GPL 2.0 License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
 
