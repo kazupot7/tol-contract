@@ -92,7 +92,7 @@ contract TOLToken is Context, IERC20, Ownable {
      * This function provides the minimum duration that tokens must be held
      * before the holder is eligible to participate in the launchpad.
      */
-    function minimumHoldingTime() external view returns (uint64) {
+    function minimumHoldingTime() public view returns (uint64) {
         return _minimumHoldingTime;
     }
 
@@ -109,7 +109,7 @@ contract TOLToken is Context, IERC20, Ownable {
      *
      * @param account The address of the account for which to get the holding time.
      */
-    function getHoldingTime(address account) external view returns (uint256) {
+    function getHoldingTime(address account) public view returns (uint256) {
         if (holdingAt[account] == 0) {
             return 0;
         }
@@ -304,6 +304,10 @@ contract TOLToken is Context, IERC20, Ownable {
 
     function mint(address account, uint256 amount) external onlyOwner {
         _mint(account, amount);
+
+        if (holdingAt[account] == 0) {
+            holdingAt[account] = block.timestamp;
+        }
     }
 
     /**
