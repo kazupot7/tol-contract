@@ -1,17 +1,38 @@
-node_modules
+# compiled output
+/dist
+/node_modules
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Environment
 .env
 
-# Hardhat files
-/cache
-/artifacts
+# OS
+.DS_Store
 
-# TypeChain files
-/typechain
-/typechain-types
-
-# solidity-coverage files
+# Tests
 /coverage
-/coverage.json
+/.nyc_output
 
-# Hardhat Ignition default folder for deployments against a local node
-ignition/deployments/chain-31337
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
